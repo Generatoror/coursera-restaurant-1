@@ -2,19 +2,46 @@
 <html lang="en">
   <head>
   <style>
-  *{
-  box-sizing:dorder-box;
-  }
+   *{
+      box-sizing:border-box;
+    }
+    .infobox {
+      background-color:#888888;
+      border-width:3px;
+      border-color:#000000;
+      margin:2% 2%;
+    }
+    @media (min-width:992px) {
+      .cont-bg{
+        width:33.3%;
+      }
+    }
+    @media (min-width:768px) and (max-width:991px) {
+      .cont-md{
+        width:50%;
+      }
+    }
+    @media (max-width:767px) {
+      .cont-md{
+        width:100%;
+      }
+    }
   </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Boostrap Starter Page</title>
+    <title>My restaurant</title>
   </head>
 <body>
-
-  <h1>Hello Coursera!</h1>
-
+  <div class="infobox cont-bg cont-md cont-sm">
+    <div id = "chicken" class = "box-title">Chicken</div>
+  </div>
+  <div class="infobox cont-bg cont-md cont-sm">
+    <div id = "beef" class = "box-title">Beef</div>
+  </div>
+  <div class="infobox cont-bg cont-md cont-sm">
+    <div id = "sushi" class = "box-title">Sushi</div>
+  </div>    
 </body>
 </html>
